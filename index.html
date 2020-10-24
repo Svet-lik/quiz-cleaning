@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="pass-test pass-test__content">
+      <button class="button pass-test__button button--primary">
+        Пройти тест
+      </button>
+    </div>
+
+    <div class="overlay"></div>
+    <div class="quiz">
+      <div class="quiz__content">
+        <div class="quiz-head">
+          <a href="index.html" class="quiz-head__logo">
+            <img src="./img/logo.png" alt="logo" />
+          </a>
+          <strong class="quiz-head__hint"
+            >Подскажем, какая уборка подходит для Вас</strong
+          >
+        </div>
+        <div class="quiz-body">
+          <form action="#" class="form quiz-body__form" method="post">
+            <fieldset class="form__fieldset" style="display: none">
+              <div class="form__title">Ваша квартира после ремонта?</div>
+              <div class="form__wrap">
+                <label
+                  for="label-choise_yes_first"
+                  class="form__label-radio active-radio"
+                >
+                  <input
+                    type="radio"
+                    id="label-choise_yes_first"
+                    class="form__radio"
+                    name="choise-first"
+                    value="Да"
+                  />
+                  <div class="form__choise">
+                    <div class="form__image">
+                      <img src="./img/quiz_1.jpg" alt="quiz_1" />
+                    </div>
+                    <div class="form__answer">Да</div>
+                  </div>
+                </label>
+                <label for="label-choise_no_first" class="form__label-radio">
+                  <input
+                    type="radio"
+                    id="label-choise_no_first"
+                    class="form__radio"
+                    name="choise-first"
+                    value="Нет"
+                  />
+                  <div class="form__choise">
+                    <div class="form__image">
+                      <img src="./img/quiz_2.jpg" alt="quiz_2" />
+                    </div>
+                    <div class="form__answer">Нет</div>
+                  </div>
+                </label>
+              </div>
+              <div class="form-button form-button__indent">
+                <button class="button form-button__btn-next button--primary">
+                  Далее
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset" style="display: block">
+              <div class="form__title">
+                Укажите площадь Вашей квартиры/дома?
+              </div>
+              <div class="form__column">
+                <div class="form__group acive-checkbox">
+                  <input
+                    type="checkbox"
+                    name="user_check_1"
+                    id="check_1"
+                    class="form__input"
+                    value="Менее 50 кв м"
+                  />
+                  <label for="check_1" class="form__label-checkbox"
+                    >Менее 50 кв м</label
+                  >
+                </div>
+                <div class="form__group">
+                  <input
+                    type="checkbox"
+                    name="user_check_2"
+                    id="check_2"
+                    class="form__input"
+                    value="От 50 до 100 кв м"
+                  />
+                  <label for="check_2" class="form__label-checkbox"
+                    >От 50 до 100 кв м</label
+                  >
+                </div>
+                <div class="form__group">
+                  <input
+                    type="checkbox"
+                    name="user_check_3"
+                    id="check_3"
+                    class="form__input"
+                    value="Более 100 кв м"
+                  />
+                  <label for="check_3" class="form__label-checkbox"
+                    >Более 100 кв м</label
+                  >
+                </div>
+              </div>
+              <div class="form-button form-button__indent">
+                <button class="form-button__btn-prev"></button>
+                <button class="button form-button__btn-next button--primary">Далее</button>
+              </div>
+            </fieldset>
+            <fieldset class="form__fieldset" style="display: none"></fieldset>
+            <fieldset class="form__fieldset" style="display: none"></fieldset>
+            <fieldset class="form__fieldset" style="display: none"></fieldset>
+          </form>
+        </div>
+        <div class="quiz-position">
+          <div class="quiz-position__bg">
+            <span class="quiz-position__on">Тест пройден на</span>
+            <div class="quiz-position_percent">
+              <span id="quiz-position_percent-change">25</span>%
+            </div>
+            <span class="quiz-position__find-out"
+              >Узнайте, какая скидка ждет вас в конце теста!</span
+            >
+            <div class="quiz-position__image"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
